@@ -19,27 +19,27 @@
 // }
 
 // задание 2
-class Car {
-  String? name;
-  int? HP;
-  String? color;
-  int? price;
-  void printCarMod() {
-    print(
-        'The car $name, Horse Power is $HP, colored on $color, total price is $price');
-  }
+// class Car {
+//   String? name;
+//   int? HP;
+//   String? color;
+//   int? price;
+//   void printCarMod() {
+//     print(
+//         'The car $name, Horse Power is $HP, colored on $color, total price is $price');
+//   }
 
-  Car(this.name, this.HP, this.color, this.price);
-}
+//   Car(this.name, this.HP, this.color, this.price);
+// }
 
-void main() {
-  Car car = Car('Mitsubishi', 750, 'Red', 20000);
-  Car car1 = Car('Nissan', 700, 'Blue', 22000);
-  Car car2 = Car('Toyota', 690, 'Yellow', 21000);
-  car.printCarMod();
-  car1.printCarMod();
-  car2.printCarMod();
-}
+// void main() {
+//   Car car = Car('Mitsubishi', 750, 'Red', 20000);
+//   Car car1 = Car('Nissan', 700, 'Blue', 22000);
+//   Car car2 = Car('Toyota', 690, 'Yellow', 21000);
+//   car.printCarMod();
+//   car1.printCarMod();
+//   car2.printCarMod();
+// }
 
 // задание 3
 
