@@ -76,27 +76,35 @@
 //   student.getCourse();
 // }
 
+// задание 3
 class User {
-  final name;
-  final surname;
-  final age;
+  final String? name;
+  final String? surname;
+  final int? age;
   User(this.name, this.surname, this.age);
 }
 
 class Student extends User {
-  final String getFullName;
-  getFullname = (name + surname);
-  final int getCourse;
-  getCourse = (DateTime.now().year - age);
-  Student(
-    this.getFullName,
-    this.getCourse,
-  );
+  final int? enrolee;
+
+  Student(this.enrolee, String name, String surname, int age)
+      : super(name, surname, age);
+  getFullName() {
+    print('$surname $name');
+  }
+
+  getCourse() {
+    int? result = DateTime.now().year - enrolee!;
+
+    if (result > 5) {
+      result = 5;
+    }
+    print('$result ваш курс');
+  }
 }
 
 void main() {
-  final user = User('Hu', 'Tao', 17);
-  final student = Student('Hu Tao', 2004);
-  print(user);
-  print(student);
+  Student student = Student(2018, 'Tao', 'Hu', 17);
+  student.getFullName();
+  student.getCourse();
 }
